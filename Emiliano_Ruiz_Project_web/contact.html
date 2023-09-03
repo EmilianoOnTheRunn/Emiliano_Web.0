@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Page  </title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Fjalla+One&family=Lalezar&family=Rubik+Moonrocks&family=Rubik+Puddles&family=Rubik+Wet+Paint&family=Staatliches&display=swap" rel="stylesheet">
+    <script type="module" src="script.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("navbar");
+            console.log("Point 0");
+            console.log(x[0]);
+            if (x[0].style.display === "none") {
+                x[0].style.display = "block";
+            } else {
+                x[0].style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="#"></a><img class="img-logo" src="img/Logo 500x500 px.png" alt="logo" />
+
+
+            <span class="menu-icon" onclick="myFunction()">See menu</span>
+            <nav class="navbar">
+                <ul class="show">
+                    <il><a href="Index.html">Home</a></il>
+                    <il><a href="about.html" target="_parent">About</a></il>
+                    <il><a href="cv.html">CV</a></il>
+                    <il><a href="contact.html">Contact</a></il>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <strong><h1>My Location,<br />LaSalle College</h1></strong>
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                const myLatLng = { lat: 45.4913929, lng: -73.581493 };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 12,
+                    center: myLatLng,
+                });
+
+                new google.maps.Marker({
+                    position: myLatLng,
+                    map,
+                    title: "My College",
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbljGfrAQaBc8GzA7C7QvHSrLtZnD07IA&callback=initMap"></script>
+        <span class="container info"><br />My phone number: 123-456-7890 <br /> </span>
+        <span class="container email"> My email: emiliano@hotmail.com</span>
+    </main>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <footer>
+        <div class="footerall">
+            <div class="footer-container">
+                <h3>Social Media</h3>
+                <p>Emiliano Ruiz Gomez</p>
+                <ul class="social">
+                    <li><a class="containerfa" href="http://facebook.com/emiliano"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="containertw" href="http://twitter.com/emiliano"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="containergoo" href="http://plus.google.com/emiliano"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a class="containerlin" href="https://es.linkedin.com/emiliano"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>Designed by  <span>Emiliano Ruiz Gomez</span></p>
+            </div>
+        </div>
+    </footer>
+    </footer>
+
+</body>
+</html>

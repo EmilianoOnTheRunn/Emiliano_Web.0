@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Georgia, times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0 auto;
+    position: relative;
+}
+.container{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.img-logo {
+    width: 50px;
+    font-size: 1.3em;
+    flex-wrap: wrap;
+}
+.img-logo:hover {
+    font-size: 120%;
+    display: block;
+    transition: 0.7s;
+    color: white;
+}
+.header {
+    font-family: 'Rubik Wet Paint';
+    background: black;
+    color: white;
+    padding: 2rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navbar ul il{
+    display: inline-block;
+}
+.navbar ul il a{
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+}
+.navbar ul il a:hover{
+    background: purple;
+    font-size: 120%;
+}
+main{
+    width: 90vw;
+    margin: 0 auto;
+    padding: 30px 20px;
+    min-height: calc(100vh - 221px - 58px);
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: auto;
+    width: 100%; /*100wv same*/
+    font-family: "open sans";
+    padding-top: 40px;
+    padding-bottom: 0;
+    color: white;
+} 
+/*footer:hover
+{
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    transition: 0.7s;
+    background:midnightblue;
+}*/
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-container h3
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-container p
+{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.social
+{
+    color:white;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0  3rem 0;
+}
+.social li
+{
+    margin: 0 10px;
+}
+.social a 
+{
+    text-decoration: none;
+}
+.social li a 
+{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.social a:hover i
+{
+    font-size: 120%;
+    transition: color 0.5s ease;
+}
+.containerfa:hover {
+    color: #4267B2;
+}
+.containertw:hover {
+    color: #1DA1F2;
+}
+.containergoo:hover {
+    color: #DB4437;
+}
+.containerlin:hover {
+    color: #0B5E86;
+}/*
+.fa :hover i:nth-child(1)
+{
+    color: #4267B2;
+}
+.social a:hover i:nth-child(2) {
+    color: #1DA1F2;
+}
+.social a:hover i:nth-child(3n+0)
+{
+    color: #DB4437;
+}
+.social a:hover i:nth-child(4)
+{
+    color: #0B5E86;*/
+}
+.footer-bottom {
+    background: black;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+/*.footer-bottom:hover {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    transition: 0.7s;
+    background: midnightblue;
+}*/
+.footer-bottom p  
+{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span
+{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.menu-icon{
+    display: none;
+}
+.container1{
+    padding-top: 4em;
+    padding-left: 300px;
+}
+.h1 {
+    color: purple;
+    font-family: Georgia;
+    font-size: 30px;
+    margin-top: 100PX;
+    font-weight: 200;
+}
+td:nth-child(2n+1) {
+    color: purple;
+}
+main{
+    background-image:cross-fade();
+}
+.continertable {
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
+}
+td{
+    padding: 20px;
+    vertical-align: top;
+}
+tr td:nth-child(1) {
+    padding-left: 20px; 
+    width: 90px;
+}
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+    .show {
+        display: none;
+    }
+    .menu-icon {
+        padding-left: 250px;
+        display: block;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .navbar{
+        width: 100%;
+        margin: 1rem;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar ul.show{
+        display: block;
+    }
+    .navbar ul il{
+        display: block;
+    }
+    .navbar ul il a{
+        display: block;
+        padding: 0.5rem  ;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+    .navbar ul il a:hover{
+        background: purple;
+        font-size: 120%;
+    }
+    .img-logo {
+        width: 50px;
+        font-size: 1.3em;
+        flex-wrap: wrap;
+    }
+    .navbar{
+        display: none;
+    }
+    .container.h1{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
+    header{
+        width:100%;
+    }
+}
